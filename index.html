@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+
+        #pic img {
+            height: 45px;
+            width: 130px;
+            margin-left: 300px;
+            margin-top: 30px;
+            padding-right: 500px;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav h1 {
+            font-size: 16px;
+            font-weight: 600;
+            padding-top: 45px;
+            padding-right: 35px;
+            letter-spacing: 0.5px;
+        }
+
+        .drop {
+            display: none;
+            position: absolute;
+            width: 100px;
+            min-width: 150px;
+        }
+
+        .dp:hover .drop {
+            display: block;
+        }
+
+        .dp {
+            position: relative;
+            display: inline;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        .text {
+            width: 100%;
+            margin-left: 300px;
+            position: absolute;
+        }
+
+        .text h1 {
+            font-size: 78px;
+            margin-top: 140px;
+            font-weight: 700;
+            margin-bottom: 35px;
+
+        }
+
+        .text p {
+            font-size: 19px;
+            line-height: 30px;
+            color: #6f7c96;
+        }
+
+        #bt button {
+            width: 200px;
+            height: 70px;
+            border-radius: 15px;
+            font-size: large;
+            border: none;
+            background-color: rgb(0, 132, 255);
+            color: white;
+            margin-top: 35px;
+        }
+
+        #bt {
+            display: flex;
+        }
+
+        #bt p {
+            margin-top: 55px;
+            margin-left: 60px;
+        }
+
+        #bt i {
+            font-size: 70px;
+            margin-top: 35px;
+            margin-left: 20px;
+        }
+
+        .center {
+            position: relative;
+        }
+
+        .mpic {
+            position: absolute;
+            margin-left: 1050px;
+            margin-top: 100px;
+        }
+
+        .lekha {
+            margin-top: 820px;
+            text-align: center;
+
+        }
+
+        .lekha h3 {
+            padding-bottom: 35px;
+            color: #F89E52;
+        }
+
+        .lekha h1 {
+            font-size: 60px;
+            padding-bottom: 20px;
+        }
+
+        .lekha p {
+            word-spacing: 1px;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            color: #6f7c96;
+            padding-bottom: 50px;
+        }
+
+        .bx {
+            width: 1300px;
+            height: 550px;
+            background-color: #7e97bd25;
+            border-radius: 35px;
+            margin: auto;
+            position: relative;
+        }
+
+        .box1 img {
+            width: 60px;
+            height: 60px;
+            padding-top: 150px;
+            padding-bottom: 15px;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            position: absolute;
+        }
+
+        .box1 p {
+            line-height: 25px;
+            padding-top: 15px;
+            word-spacing: 1px;
+            color: #6f7c96;
+        }
+
+        .box1 {
+            margin-left: 180px;
+        }
+
+        .box2 img {
+            width: 60px;
+            height: 60px;
+            padding-top: 150px;
+            padding-bottom: 15px;
+        }
+
+        .box2 {
+            margin-left: 550px;
+        }
+
+        .box2 p {
+            line-height: 25px;
+            padding-top: 15px;
+            word-spacing: 1px;
+            color: #6f7c96;
+        }
+
+        .box3 img {
+            width: 60px;
+            height: 60px;
+            padding-top: 150px;
+            padding-bottom: 15px;
+        }
+
+        .box3 {
+            margin-left: 900px;
+        }
+
+        .box3 p {
+            line-height: 25px;
+            padding-top: 15px;
+            word-spacing: 1px;
+            color: #6f7c96;
+        }
+
+        .bx2 h2 {
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .bx2 img {
+            padding-top: 50px;
+            padding-right: 90px;
+        }
+
+        .bx3 {
+            margin-top: 150px;
+            position: relative;
+        }
+
+        .bx3 img {
+            padding-left: 400px;
+        }
+
+        #pic00 {
+            position: absolute;
+        }
+
+        .bx3 h3 {
+            color: #F89E52;
+            padding-bottom: 35px;
+
+        }
+
+        .text00 {
+            position: absolute;
+            padding-left: 1000px;
+            padding-top: 100px;
+        }
+
+        .text00 h1 {
+            font-size: 60px;
+            padding-bottom: 20px;
+        }
+
+        .text00 p {
+            color: #6f7c96;
+            line-height: 30px;
+        }
+
+        .text00 button {
+            width: 200px;
+            height: 70px;
+            border-radius: 15px;
+            font-size: large;
+            border: none;
+            background-color: rgb(0, 132, 255);
+            color: white;
+            margin-top: 35px;
+        }
+
+        .bx4 h3 {
+            color: #F89E52;
+            padding-bottom: 35px;
+
+        }
+
+        .bx4 {
+            position: relative;
+            padding-left: 300px;
+            padding-top: 700px;
+        }
+
+        .bx4 h1 {
+            font-size: 60px;
+            padding-bottom: 20px;
+        }
+
+        .bx4 p {
+            color: #6f7c96;
+            line-height: 30px;
+        }
+
+        .bx4 button {
+            width: 200px;
+            height: 70px;
+            border-radius: 15px;
+            font-size: large;
+            border: none;
+            background-color: rgb(0, 132, 255);
+            color: white;
+            margin-top: 35px;
+        }
+
+        #bb {
+            margin-left: 800px;
+            box-shadow: 0 1px 1pc 1px rgba(128, 128, 128, 0.123);
+            width: 200px;
+            height: 200px;
+            border-radius: 25px;
+            margin-top: -430px;
+            position: relative;
+        }
+
+        #bb img {
+            padding-top: 70px;
+            padding-left: 70px;
+            position: absolute;
+        }
+
+        #bb h1 {
+            color: #F76766;
+            position: absolute;
+            padding-top: 40px;
+            padding-left: 30px;
+        }
+
+        #bb p {
+            position: absolute;
+            padding-top: 120px;
+            padding-left: 70px;
+        }
+
+        #cc {
+            margin-left: 1050px;
+            box-shadow: 0 1px 1pc 1px rgba(128, 128, 128, 0.123);
+            width: 200px;
+            height: 200px;
+            border-radius: 25px;
+            margin-top: -198px;
+            position: relative;
+        }
+
+        #cc img {
+            padding-top: 70px;
+            padding-left: 70px;
+            position: absolute;
+        }
+
+        #cc h1 {
+            color: #2B78F3;
+            position: absolute;
+            padding-top: 40px;
+            padding-left: 50px;
+        }
+
+        #cc p {
+            position: absolute;
+            padding-top: 120px;
+            padding-left: 66px;
+        }
+
+        #dd {
+            margin-left: 800px;
+            box-shadow: 0 1px 1pc 1px rgba(128, 128, 128, 0.123);
+            width: 200px;
+            height: 200px;
+            border-radius: 25px;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        #dd img {
+            padding-top: 75px;
+            position: absolute;
+        }
+
+        #dd h1 {
+            color: #57C0CE;
+            position: absolute;
+            padding-top: 40px;
+            padding-left: 50px;
+        }
+
+        #dd p {
+            position: absolute;
+            padding-top: 120px;
+            padding-left: 66px;
+        }
+
+        #aa {
+            margin-left: 1050px;
+            box-shadow: 0 1px 1pc 1px rgba(128, 128, 128, 0.123);
+            width: 200px;
+            height: 200px;
+            border-radius: 25px;
+            margin-top: -198px;
+            position: relative;
+        }
+
+        #aa img {
+            padding-top: 75px;
+            position: absolute;
+        }
+
+        #aa h1 {
+            color: #A666F7;
+            position: absolute;
+            padding-top: 40px;
+            padding-left: 60px;
+        }
+
+        #aa p {
+            position: absolute;
+            padding-top: 120px;
+            padding-left: 70px;
+        }
+
+        .bx5 {
+            background-color: #F3F7FA;
+            height: 1200px;
+            width: 100%;
+            margin-top: 100px;
+            position: relative;
+
+        }
+
+        .bx5 img {
+            padding-left: 1093px;
+            padding-top: 100px;
+            position: absolute;
+        }
+
+        #our h3 {
+            color: #F89E52;
+            padding-bottom: 30px;
+
+        }
+
+        #our {
+            padding-left: 550px;
+            padding-top: 130px;
+        }
+
+        #our h1 {
+            font-size: 60px;
+        }
+
+        .bx5 {
+            position: relative;
+        }
+
+        #box99 {
+            width: 500px;
+            height: 800px;
+            background-color: white;
+            position: absolute;
+            margin-top: 100px;
+            border-radius: 25px;
+            margin-left: 550px;
+        }
+
+        #box99 h2 {
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-bottom: 20px;
+        }
+
+        #box99 p {
+            padding-left: 50px;
+        }
+
+        #box99 img {
+            margin-left: -1050px;
+            margin-top: -70px;
+            border-radius: 25px;
+
+        }
+
+        #box99 button {
+            width: 100px;
+            height: 50px;
+            margin-top: 580px;
+            border-radius: 15px;
+            margin-left: 50px;
+            border: none;
+            background-color: rgba(245, 222, 179, 0);
+            border: 1px solid rgb(0, 132, 255);
+            color: #2B78F3;
+            font-size: large;
+        }
+
+        #box11 {
+            width: 500px;
+            height: 800px;
+            background-color: white;
+            position: absolute;
+            margin-top: 100px;
+            border-radius: 25px;
+            margin-left: 1080px;
+        }
+
+        #box11 h2 {
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-bottom: 20px;
+        }
+
+        #box11 p {
+            padding-left: 50px;
+        }
+
+        #box11 img {
+            margin-left: -1050px;
+            margin-top: -70px;
+            border-radius: 25px;
+
+        }
+
+        #box11 button {
+            width: 100px;
+            height: 50px;
+            margin-top: 580px;
+            border-radius: 15px;
+            margin-left: 50px;
+            border: none;
+            background-color: rgba(245, 222, 179, 0);
+            border: 1px solid rgb(0, 132, 255);
+            color: #2B78F3;
+            font-size: large;
+        }
+
+        #box33 {
+            width: 500px;
+            height: 800px;
+            background-color: white;
+            position: absolute;
+            margin-top: 100px;
+            border-radius: 25px;
+            margin-left: 1605px;
+        }
+
+        #box33 h2 {
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-bottom: 20px;
+        }
+
+        #box33 p {
+            padding-left: 50px;
+        }
+
+        #box33 img {
+            margin-left: -1050px;
+            margin-top: -70px;
+            border-radius: 25px;
+
+        }
+
+        #box33 button {
+            width: 100px;
+            height: 50px;
+            margin-top: 580px;
+            border-radius: 15px;
+            margin-left: 50px;
+            border: none;
+            background-color: rgba(245, 222, 179, 0);
+            border: 1px solid rgb(0, 132, 255);
+            color: #2B78F3;
+            font-size: large;
+        }
+
+        #box22 {
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+
+        #box22 h3 {
+            padding-bottom: 50px;
+
+        }
+
+        .center3 {
+            width: 100%;
+            height: 800px;
+            background-color: rgb(42, 45, 49);
+            color: white;
+        }
+
+        .center3 h1 {
+            font-size: 60px;
+            padding-top: 100px;
+            padding-left: 300px;
+        }
+
+        #c3m {
+            width: 600px;
+            height: 300px;
+            background-color: white;
+            border-radius: 25px;
+            margin-left: 300px;
+            margin-top: 100px;
+            color: black;
+        }
+
+        #c3m img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 40px;
+            margin-top: -40px;
+            outline: 10px solid white;
+        }
+
+        #c3m h2 {
+            padding-left: 40px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        #c3m p {
+            padding-left: 40px;
+            padding-bottom: 25px;
+            line-height: 25px;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+        }
+
+        #c3o {
+            width: 600px;
+            height: 300px;
+            background-color: white;
+            border-radius: 25px;
+            margin-left: 930px;
+            margin-top: -300px;
+            color: black;
+        }
+
+        #c3o img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 40px;
+            margin-top: -40px;
+            outline: 10px solid white;
+        }
+
+        #c3o h2 {
+            padding-left: 40px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        #c3o p {
+            padding-left: 40px;
+            padding-bottom: 25px;
+            line-height: 25px;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+        }
+
+        #c3m2 {
+            width: 600px;
+            height: 300px;
+            background-color: white;
+            border-radius: 25px;
+            margin-left: 1560px;
+            margin-top: -300px;
+            color: black;
+        }
+
+        #c3m2 img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 40px;
+            margin-top: -40px;
+            outline: 10px solid white;
+        }
+
+        #c3m2 h2 {
+            padding-left: 40px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        #c3m2 p {
+            padding-left: 40px;
+            padding-bottom: 25px;
+            line-height: 25px;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+        }
+
+        .center4 {
+            width: 100%;
+            height: 850px;
+            position: relative;
+        }
+
+        #blog {
+            margin-top: 150px;
+
+        }
+
+        #blog h3 {
+            color: #F89E52;
+            text-align: center;
+        }
+
+        #blog h1 {
+            font-size: 60px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+
+        .ch3,
+        .ch4,
+        .ch5 {
+            position: absolute;
+        }
+
+        .center4 i {
+            color: #F89E52;
+            padding-right: 8px;
+            padding-left: 15px;
+
+        }
+
+        .center4 a {
+            color: black;
+        }
+
+        .ch3 img {
+            border-radius: 25px;
+            width: 450px;
+            height: 270px;
+            margin-left: 270px;
+
+        }
+
+        #hh3 {
+            display: flex;
+            margin-left: 270px;
+            margin-top: 20px;
+        }
+
+        .ch3 p {
+            color: #6f7c96;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+        }
+
+        .ch3 h3 {
+            padding-left: 270px;
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        .ch4 img {
+            border-radius: 25px;
+            width: 450px;
+            height: 270px;
+            margin-left: 270px;
+
+        }
+
+        #hh4 {
+            display: flex;
+            margin-left: 270px;
+            margin-top: 20px;
+        }
+
+        .ch4 p {
+            color: #6f7c96;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+        }
+
+        .ch4 h3 {
+            margin-left: -175px;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+
+        .ch4 {
+            margin-left: 480px;
+        }
+
+        .ch5 img {
+            border-radius: 25px;
+            width: 450px;
+            height: 270px;
+            margin-left: 270px;
+
+        }
+
+        #hh5 {
+            display: flex;
+            margin-left: 270px;
+            margin-top: 20px;
+        }
+
+        .ch5 p {
+            color: #6f7c96;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+        }
+
+        .ch5 h3 {
+            margin-left: -170px;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+
+        .ch5 {
+            margin-left: 960px;
+        }
+
+        .but {
+            margin-top: 580px;
+            margin-left: 850px;
+        }
+
+        .but button {
+            width: 170px;
+            height: 70px;
+            border-radius: 15px;
+            font-size: large;
+            border: none;
+            background-color: #F89E52;
+            color: white;
+        }
+
+        .fbox {
+            width: 60%;
+            height: 450px;
+            background-color: #171727;
+            border-radius: 150px 25px 25px 25px;
+            margin-left: 350px;
+            margin-top: 100px;
+            color: white;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .fbox img {
+            margin-top: -40px;
+            margin-left: 1000px;
+
+        }
+
+        .fbox h3 {
+            color: #F89E52;
+            padding-bottom: 20px;
+        }
+
+        .fbox h1 {
+            font-size: 60px;
+
+        }
+
+        .fbox input {
+            background-color: #88888877;
+            width: 450px;
+            height: 60px;
+            border-radius: 15px;
+            border: none;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-left: 0px;
+            text-align: center;
+            font-size: large;
+        }
+
+        ::placeholder {
+            color: #929292;
+            text-align: center;
+        }
+
+        .fbox button {
+            height: 60px;
+            border-radius: 15px;
+            border: none;
+            width: 150px;
+            margin-left: 20px;
+            background-color: #F89E52;
+            color: white;
+            font-size: large;
+        }
+
+        .footer {
+            width: 100%;
+            height: 550px;
+            background-color: #201f29;
+            position: relative;
+            color: white;
+        }
+
+        .f1 img {
+            width: 130px;
+            height: 45px;
+        }
+
+        .f1,
+        .f2,
+        .f3,
+        .f4 {
+            width: 200px;
+            position: absolute;
+        }
+
+        #f0 i {
+            margin-top: 20px;
+            color: rgb(163, 163, 163);
+            border: 1px solid rgba(128, 128, 128, 0.226);
+            border-radius: 30%;
+            margin-right: 17px;
+            padding: 5px;
+            margin-bottom: 40px;
+        }
+
+        .f1 p {
+            color: #d3d3d3;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            padding-bottom: 15px;
+        }
+
+        .f1 {
+            margin-top: 140px;
+            margin-left: 300px;
+        }
+
+        .f2 {
+            margin-left: 650px;
+            margin-top: 140px;
+        }
+
+        .f2 h2 {
+            padding-bottom: 30px;
+            margin-left: -20px;
+        }
+
+        .f2 li {
+            color: #d3d3d3;
+            padding-bottom: 20px;
+
+        }
+
+        .f3 {
+            margin-left: 1000px;
+            margin-top: 145px;
+        }
+
+        .f3 h2 {
+            padding-bottom: 30px;
+            margin-left: -20px;
+        }
+
+        .f3 li {
+            color: #d3d3d3;
+            padding-bottom: 20px;
+
+        }
+
+        .f4 {
+            margin-left: 1300px;
+            margin-top: 145px;
+        }
+
+        .f4 h2 {
+            padding-bottom: 30px;
+
+        }
+
+        .f4 p {
+            color: #d3d3d3;
+            padding-bottom: 30px;
+
+        }
+
+        .f4 i {
+            padding-right: 10px;
+        }
+
+        .f5 {
+            width: 100%;
+            background-color: #22222c;
+            height: 80px;
+            position: absolute;
+            margin-top: 480px;
+        }
+
+        .f5 h4 {
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
+            padding-top: 35px;
+            padding-left: 1100px;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div id="pic">
+            <a href="#"><img src="./xolio.png" alt=""></a>
+        </div>
+        <div class="nav">
+            <div class="dp">
+                <a href="#">
+                    <h1>Home</h1>
+                </a>
+                <div class="drop">
+                    <a href="#">
+                        <h1>Home 1</h1>
+                    </a>
+                    <a href="#">
+                        <h1>Home 2</h1>
+                    </a>
+                    <a href="#">
+                        <h1>Home 3</h1>
+                    </a>
+                </div>
+
+            </div>
+            <a href="#">
+                <h1>About Us</h1>
+            </a>
+            <a href="#">
+                <h1>Services</h1>
+            </a>
+            <a href="#">
+                <h1>Team</h1>
+            </a>
+            <a href="#">
+                <h1>Blog</h1>
+            </a>
+            <a href="#">
+                <h1>Pages</h1>
+            </a>
+            <a href="#">
+                <h1>Contact</h1>
+            </a>
+
+        </div>
+
+    </div>
+    <div class="center">
+        <div class="text">
+            <h1>Digital Agency <br> Business Make <br> Big Deal.</h1>
+            <p>We beilieve that Building Strong Relationship Is At The <br> Heart Of Prividing Exeptional Services.</p>
+            <div id="bt">
+                <button>Get Started</button>
+                <p>See Live Demo</p>
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
+
+
+        </div>
+        <div class="mpic">
+            <img src="./16482542501681276128.png" alt="">
+
+        </div>
+    </div>
+    <div class="center2">
+        <div class="lekha">
+            <h3>What We Do </h3>
+            <h1>We make Designs that <br> Lead and Inspire.</h1>
+            <p>Professionalism and expertise are the foundation of our service offerings <br> & ensure that our team
+                members are highly skilled.</p>
+
+
+        </div>
+        <div class="bx">
+            <div class="box1">
+                <img src="./hard.png" alt="">
+                <h2>Branding</h2>
+                <p>We offer a renge of Services <br> related to graphics <br> animations including <br> marketing.</p>
+
+            </div>
+            <div class="box2">
+                <img src="./networking.png" alt="">
+                <h2>Networking</h2>
+                <p>We offer a renge of Services <br> related to graphics <br> animations including <br> marketing.</p>
+            </div>
+            <div class="box3">
+                <img src="./graphics.png" alt="">
+                <h2>Graphics design</h2>
+                <p>We offer a renge of Services <br> related to graphics <br> animations including <br> marketing.</p>
+            </div>
+
+        </div>
+        <div class="bx2">
+            <h2>We are Already Build Solution for...</h2>
+            <img style="padding-left: 350px;" src="./google.png" alt="">
+            <img src="./air.png" alt="">
+            <img src="./paypal.png" alt="">
+            <img src="./amazon.png" alt="">
+            <img src="./shopify.png" alt="">
+            <img src="./slack.png" alt="">
+        </div>
+        <div class="bx3">
+            <div id="pic00">
+                <img src="./bx2 girl.png" alt="">
+            </div>
+            <div class="text00">
+                <h3>Our Agency</h3>
+                <h1>Best Online Agency <br> Since 2023</h1>
+                <p>We are a premier service provider that is committed to excellence <br> and customer satisfaction. Our
+                    agency offers a wide range of <br> services designed to meet the diverse needs of our valued
+                    clients. <br> From start to finish, we strive to deliver the highest level of <br> professionalism,
+                    reliability, and quality in everything we do.</p>
+                <button>Learn More</button>
+
+
+            </div>
+
+
+        </div>
+        <div class="bx4">
+
+            <h3>Our Success</h3>
+            <h1>Over 2000+ <br> Completed Work & <br> Still Counting.</h1>
+            <p>We keep our clients informed throughout the process, provide <br> regular updates, and address any
+                concerns or questions promptly.</p>
+            <button>Learn More</button>
+            <div id="bb">
+                <img src="./like.png" alt="">
+                <h1>1102</h1>
+                <p>Projects</p>
+
+            </div>
+            <div id="cc">
+                <img src="./tik.png" alt="">
+                <h1>210</h1>
+                <p>Customers</p>
+            </div>
+            <div id="dd">
+                <img src="./workers.png" alt="">
+                <h1>700</h1>
+                <p>Workers</p>
+            </div>
+            <div id="aa">
+                <img src="./office.png" alt="">
+                <h1>75</h1>
+                <p>Office</p>
+            </div>
+        </div>
+
+        <div class="bx5">
+            <img src="./onk kothin.png" alt="">
+            <div id="our">
+                <h3>Our Project</h3>
+                <h1>Creative work.</h1>
+            </div>
+            <div id="box99">
+                <h2>Hosting Website Design</h2>
+                <p>UI/UX Design</p>
+                <img src="./brain.png" alt="">
+                <button>View</button>
+
+            </div>
+            <div id="box11">
+                <h2>Motion Design</h2>
+                <p>UI/UX Design</p>
+                <img src="./jni na.jpg" alt="">
+                <button>View</button>
+            </div>
+            <div id="box33">
+                <h2>Web Based Design</h2>
+                <p>UI/UX Design</p>
+                <img src="./phn.jpg" alt="">
+                <button>View</button>
+            </div>
+            <div id="box22">
+                <h3>UI/UX Design</h3>
+                <h3>Web Design</h3>
+                <h3>App Design</h3>
+                <h3>Design branding</h3>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="center3">
+        <h1>Some Words From Our <br> Customers</h1>
+        <div id="c3m">
+            <img src="./c3 man.png" alt="">
+            <h2>Donald Henry</h2>
+            <p style="color: #6f7c96;">Creative Director</p>
+            <p>"Great experience working with Xolio Services Agency! They <br> were responsive, knowledgeble, and
+                delivered exellent <br> results. highly recommened their services"</p>
+
+
+        </div>
+        <div id="c3o">
+            <img src="./c3 women.png" alt="">
+            <h2>Jhon Due</h2>
+            <p style="color: #6f7c96;">Creative Director</p>
+            <p>"Great experience working with Xolio Services Agency! They <br> were responsive, knowledgeble, and
+                delivered exellent <br> results. highly recommened their services"</p>
+
+
+
+        </div>
+        <div id="c3m2">
+            <img src="./c3 man2.png" alt="">
+            <h2>Jonahtan Andrew</h2>
+            <p style="color: #6f7c96;">Designation</p>
+            <p>"Great experience working with Xolio Services Agency! They <br> were responsive, knowledgeble, and
+                delivered exellent <br> results. highly recommened their services"</p>
+
+        </div>
+
+    </div>
+    <div class="center4">
+        <div id="blog">
+            <h3>Blog & Article</h3>
+            <h1>Recent blog post</h1>
+        </div>
+        <div class="ch3">
+            <img src="./3ph.jpg" alt="">
+            <div id="hh3">
+                <i class="fa-regular fa-user"></i>
+                <p>Admin</p>
+                <i class="fa-regular fa-calendar"></i>
+                <p>18 Apr</p>
+            </div>
+            <h3>5 Benefits of Hiring a Service Agency <br> for Your Business</h3>
+            <p
+                style="padding-left: 270px; padding-top: 20px; letter-spacing: 0.5px; word-spacing: 1px; line-height: 25px;">
+                Introduction:In today's fast-paced business <br> landscape, outsourcing services to specialized <br>
+                agencies has become a common practice for many <br> businesses.... <a href="#">Read More</a> </p>
+
+        </div>
+        <div class="ch4">
+            <img src="./4ph.png" alt="">
+            <div id="hh4">
+                <i class="fa-regular fa-user"></i>
+                <p>Admin</p>
+                <i class="fa-regular fa-calendar"></i>
+                <p>18 Apr</p>
+                <h3>The Ultimate Guide to Choosing the <br> Right Service Agency</h3>
+                <p
+                    style="margin-left: -338px; padding-top: 105px; letter-spacing: 0.5px; word-spacing: 1px; line-height: 25px;">
+                    Introduction:In today's fast-paced business <br> landscape, outsourcing services to specialized <br>
+                    agencies has become a common practice for many <br> businesses.... <a href="#">Read More</a> </p>
+            </div>
+
+        </div>
+        <div class="ch5">
+            <img src="./5ph.png" alt="">
+            <div id="hh5">
+                <i class="fa-regular fa-user"></i>
+                <p>Admin</p>
+                <i class="fa-regular fa-calendar"></i>
+                <p>18 Apr</p>
+                <h3>5 Key Benefits of Hiring a Professional <br> Marketing Agency</h3>
+                <p
+                    style="margin-left: -365px; padding-top: 105px; letter-spacing: 0.5px; word-spacing: 1px; line-height: 25px;">
+                    Introduction:In today's fast-paced business <br> landscape, outsourcing services to specialized <br>
+                    agencies has become a common practice for many <br> businesses.... <a href="#">Read More</a> </p>
+            </div>
+        </div>
+        <div class="but">
+            <button>View All</button>
+        </div>
+
+    </div>
+    <div class="center5">
+        <div class="fbox">
+            <img src="./telegram.png" alt="">
+            <h3>Get update</h3>
+            <h1>Get latest updates <br> and deals</h1>
+            <input type="email" placeholder="Enter your email address">
+            <button>Subscribe </button>
+
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="f1">
+            <img src="./xlio2.png" alt="">
+            <div id="f0">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <p>For support</p>
+            <h2>0979900000</h2>
+
+
+        </div>
+        <div class="f2">
+            <h2>Primary Pages</h2>
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+
+        </div>
+        <div class="f3">
+            <h2> Pages</h2>
+            <ul>
+                <li>About</li>
+                <li>Team & Condition</li>
+                <li>Privacy & Policy</li>
+            </ul>
+
+        </div>
+        <div class="f4">
+            <h2>Adress</h2>
+            <p><i class="fa-solid fa-phone"></i> 0979900000</p>
+            <p><i class="fa-regular fa-envelope"></i> support@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> 380 St, New York, USA</p>
+
+        </div>
+        <div class="f5">
+            <h4>Copyright © 2023 Reserved Passion by GeniusOcean</h4>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
